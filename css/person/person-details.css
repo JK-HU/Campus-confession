@@ -1,0 +1,157 @@
+
+ul,li{margin: 0;padding: 0;list-style: none;}
+.rows{
+    display: flex;
+    align-items: center;
+}
+.nocard{
+    margin: 0;
+    box-shadow: none;
+}
+.rows .cols-left{
+    margin-left: 7%;
+}
+.cols-right{
+    display: flex;
+    flex-direction:column;
+}
+.cols-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.cols-name,.cols-ID,.cols-autograph{
+    flex: 1;
+    margin: 1px 0;
+    text-align: left;
+}
+
+
+.cols-name{
+    font-size: 18px;
+    color: #000;
+    font-weight: 650;
+    display: inline-block;
+}
+.cols-name .icons-name{
+    float: right;
+    padding-right: 20%;
+    font-weight: normal;
+    color: #000;
+}
+.cols-ID{
+    font-size: 14px;
+    color: #999;
+}
+.cols-autograph{
+    font-size: 14px;
+    color: #333;
+}
+
+.lines-right{
+    border-right: 1px solid #c7c7c7;
+}
+.acolor{
+    color: #000;
+}
+
+.card-bgimg{
+   width: 100%;
+   height: 210px; 
+}
+.personal-bgimg{
+    width:100%;
+    height: 305px;
+}
+.card-bgimg img,.personal-bgimg img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.no-paddings{
+    margin: 0;padding: 0;position: relative;
+}
+.card-Headportrait{
+    width: 90px;
+    height: 90px;
+    display: block;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    margin-left: -48px;
+    z-index: 222;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.card-Headportrait img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.cont-card{
+    margin: 0;
+    box-shadow: none;
+}
+.list-cont{
+    margin-top: 4.75rem;
+}
+.bordertop {
+    border-top:none;
+}
+.widimg img{
+    border-radius: 50%;
+}
+.cont-top{
+    margin: 0.75rem 0;
+}
+.bycolor{
+    background: -wenkit-linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));
+    background: -o-linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));
+    background: -moz-linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));
+    /* background: linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));  */
+    background: linear-gradient(rgba(18,194,233,1), rgba(196,113,237,1), rgba(246,79,89,1));
+}
+.cdtop{
+    margin-top: 5rem;
+    background: linear-gradient(rgba(18,194,233,1), rgba(196,113,237,1), rgba(246,79,89,1)); /* 标准的语法（必须放在最后） */
+}
+.headcolor{
+    border-bottom: none;
+    background: rgba(47, 180, 233,1);
+}
+
+.schtitle-h2,.schtitle-h4{
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+}
+.schtitle-h2{
+    margin-bottom: 13rem;
+}
+
+/* 个性签名 */
+.autographTxt{
+    margin: 3.15rem 0;
+    text-align: center;
+}
+.submition{
+    width: 5rem;
+    height: 1.7rem;
+    
+    left: 50%;
+    margin-left: -2.5rem;
+}
+.row-li{
+    text-align: center;
+    border-right: 1px solid #c7c7c7;
+}
+.content-block ul li:last-child{border-right: none;}
+.deta-block{
+    margin: -1.3rem 0;
+}
+.data-block-ul{margin-bottom: 1.2rem;}
+.introduce{font-size: 16px;color:#000;}
+.introduce-content{font-size: 14px;color: #666}

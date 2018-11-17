@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>测试</title>
+  <link rel="stylesheet" href="./light7/dist/css/light7.css">
+  <link rel="stylesheet" href="./light7/dist/css/light7-swiper.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./css/person/person-details.css">
+</head>
+
+
+<body>
+
+  <!-- 底部导航栏 -->
+  <nav class="bar bar-tab">
+    <a class="tab-item no-transition replace" href="#index-page">
+      <span class="icon icon-home"></span>
+      <span class="tab-label">首页</span>
+    </a>
+    <a class="tab-item no-transition replace" href="#white-page">
+      <span class="icon icon-star"></span>
+      <span class="tab-label">表白墙</span>
+    </a>
+    <a class="tab-item no-transition replace" id="letter" href="#letter-page">
+      <span class="icon icon-settings"></span>
+      <span class="tab-label">情书</span>
+    </a>
+    <a class="tab-item no-transition replace" href="#mine-page">
+      <span class="icon icon-settings"></span>
+      <span class="tab-label">我的</span>
+    </a>
+  </nav>
+  <!-- 底部导航栏结束 -->
+  <!-- index-page 容器 -->
+  <div class="page page-current" id="index-page">
+    <!-- 标题栏 -->
+    <header class="bar bar-nav ">
+
+      <button class="button button-link pull-left">
+        LOGO
+      </button>
+      <button class="button button-link pull-right open-popup open-about" data-popup=".popup-about">
+        <span class="icon icon-search" id="search"></span>
+      </button>
+      <!-- <div class="search-input">
+        <label class="icon icon-search" for="search"></label>
+        <input type="search" id='search' placeholder='query...'/>
+    </div>
+    <a class="button button-fill button-primary" style="position:absolute;right:0.5rem;">Search</a> -->
+
+
+    </header><!-- 标题栏结束 -->
+
+
+    <!-- 这里是index页面内容区 -->
+    <div class="content">
+      <div class="content-padded mag-top">
+        <ul class="row bt">
+          <li class="col-50">
+            <div class="cont-bgimg open-popup" data-popup=".popup-person">
+              <!-- card-content为底部背景图片 -->
+              <div class="card-content">
+                <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg"
+                  width="100%">
+              </div><!-- card-content为底部背景图片 -->
+              <!-- cont-bgtxt这是底部信息 -->
+              <div class="cont-bgtxt">
+                <div class="cont-bgtxt-left">不能超过9个字节</div>
+                <div class="cont-bgtxt-right">喜欢</div>
+              </div><!-- cont-bgtxt这是底部信息 -->
+            </div>
+          </li>
+          <li class="col-50" style="margin-bottom:10px;">
+            <div class="cont-bgimg open-popup" data-popup=".popup-person">
+              <!-- card-content为底部背景图片 -->
+              <div class="card-content">
+                <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg"
+                  width="100%">
+              </div><!-- card-content为底部背景图片 -->
+              <!-- cont-bgtxt这是底部信息 -->
+              <div class="cont-bgtxt">
+                <div class="cont-bgtxt-left">不能超过9个字节</div>
+                <div class="cont-bgtxt-right">喜欢</div>
+              </div><!-- cont-bgtxt这是底部信息 -->
+            </div>
+          </li>
+          <li class="col-50">
+            <div class="cont-bgimg open-popup" data-popup=".popup-person">
+              <!-- card-content为底部背景图片 -->
+              <div class="card-content">
+                <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg"
+                  width="100%">
+              </div><!-- card-content为底部背景图片 -->
+              <!-- cont-bgtxt这是底部信息 -->
+              <div class="cont-bgtxt">
+                <div class="cont-bgtxt-left">不能超过9个字节</div>
+                <div class="cont-bgtxt-right">喜欢</div>
+              </div><!-- cont-bgtxt这是底部信息 -->
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div><!-- 这里是页面内容区结束 -->
+
+  </div><!-- page容器结束 -->
+
+  <!-- 表白墙 -->
+  <div class="page" id="white-page">
+    <div class="content">
+        <!-- 这里注释部分用于下拉刷新icon<div class="pull-to-refresh-layer">
+          <div class="preloader"></div>
+          
+          <div class="pull-to-refresh-arrow"></div>
+        </div> -->
+      <div class="content-inner cont-nopadd">
+        <ul class="white_ul white_ul_wrap">
+         
+        </ul>
+      </div>
+
+      <!-- 发布按钮 -->
+      <a href="#" class="button button-fill button-warning open-popup releaseButton" data-popup=".popup-release" style="line-height:2.2rem">
+        <span class="icon icon-edit releaseTxt"></span>
+      </a><!-- 发布按钮 -->
+      <!-- 刷新按钮 -->
+      <a href="#" class="button button-fill button-warning refresh_btn" style="line-height:2.2rem">
+      <span class="icon icon-edit refresh_icon"></span>
+      </a><!-- 刷新按钮结束 -->
+     
+
+    
+
+    </div><!-- 这里是页面内容区,下拉刷新结束 -->
+
+  </div><!-- 表白墙结束 -->
+
+
+
+  <!-- 情书 -->
+  <div class="page letter-page" id="letter-page">
+
+    <div class="content pull-to-refresh-content infinite-scroll" data-ptr-distance="55">
+      <div class="pull-to-refresh-layer">
+        <div class="preloader"></div>
+        <div class="pull-to-refresh-arrow"></div>
+      </div>
+
+      <div class="content-inner cont-nopadd">
+        <ul class="list-container">
+          <li>
+            <div class="card facebook-card card-nopadd">
+
+              <div class="card-content-inner">
+                <p>此处是内容11...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+              </div>
+
+              <div class="card-content-inner">
+                <p class="color-gray">2015/01/15</p>
+              </div>
+
+              <div class="card-footer no-border">
+                <a href="" class="link">
+                  <span class="icon icon-message iwt"></span>赞
+                </a>
+                <a href="#" class="link">
+                  <span class="icon icon-message iwt"></span>浏览
+                </a>
+              </div>
+            </div>
+          </li>
+          <!--  -->
+        </ul>
+        <!-- preloader -->
+        <!-- <div class="infinite-scroll-preloader">
+          <div class="preloader"></div>
+        </div> -->
+
+
+
+      </div>
+
+    </div><!-- 下拉刷新 -->
+  </div><!-- 情书结束 -->
+
+  <!-- 我的 -->
+  <div class="page" id="mine-page">
+    <!-- 这里是页面内容区 -->
+    <div class="content infinite-scroll" data-ptr-distance="55">
+      <!-- content-inner顶部卡片 -->
+      <div class="content-inner">
+        <div id="register_card" class="card nocard">
+          <div class="card-content text-center">
+            <div class="card-content-inner text-center">
+              <div class="row rows">
+                <div class="col-20 cols-left">
+                  <div class="facebook-avatar cols-img"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg"
+                      width="34" height="34"></div>
+                </div>
+                <div class="col-80 cols-right">
+                  <div class="cols-name">昵称名字
+                    <a href="edit.html" class="icon icon-edit icons-name"></a>
+                  </div>
+
+                  <div class="cols-ID">ID:1234567</div>
+                  <div class="cols-autograph">个性签名:其实我有个梦想</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="register_card" class="card nocard">
+          <div class="card-content text-center">
+            <div class="card-content-inner text-center">
+              <div class="row">
+                <div class="col-33 lines-right">
+                  <span class="" style="color: black">获赞数</span><br />
+                  <span class="" style="color: black">123456</span>
+                </div>
+                <div class="col-33 lines-right">
+                  <span class="" style="color: black">获赞数</span><br />
+                  <span class="" style="color: black">123456</span>
+                </div>
+                <div class="col-33">
+                  <span class="" style="color: black">获赞数</span><br />
+                  <span class="" style="color: black">123456</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- content-inner顶部卡片结束 -->
+
+      <div class="list-block">
+        <ul>
+          <a href="edit.html" class="acolor" data-path="edit">
+            <li class="item-content item-link">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner" style="border-bottom:1px solid #e7e7e7;">
+                <div class="item-title">编辑资料</div>
+                <div class="item-after"></div>
+              </div>
+            </li>
+          </a>
+          <a href="" class="acolor">
+            <li class="item-content item-link">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner" style="border-bottom:1px solid #e7e7e7;">
+                <div class="item-title">我的发帖</div>
+                <div class="item-after"></div>
+              </div>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="list-block">
+        <ul>
+          <a href="news.html" class="acolor">
+            <li class="item-content item-link">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner" style="border-bottom:1px solid #e7e7e7;">
+                <div class="item-title">消息</div>
+                <div class="item-after"></div>
+              </div>
+            </li>
+          </a>
+          <a href="" class="acolor">
+            <li class="item-content item-link">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner" style="border-bottom:1px solid #e7e7e7;">
+                <div class="item-title">发布历史</div>
+                <div class="item-after"></div>
+              </div>
+            </li>
+          </a>
+          <a href="about.html" class="acolor">
+            <li class="item-content item-link">
+              <div class="item-media"><i class="icon icon-f7"></i></div>
+              <div class="item-inner" style="border-bottom:1px solid #e7e7e7;">
+                <div class="item-title">关于</div>
+                <div class="item-after"></div>
+              </div>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="content-block">
+        <a href="Login.html" class="button button-big button-fill button-danger external">注销</a>
+      </div>
+    </div><!-- 这里是页面内容区结束 -->
+
+  </div><!-- 我的结束 -->
+
+
+  <!-- Search Popup -->
+  <div class="popup popup-about">
+    <header class="bar bar-nav">
+      <div class="search-input" style="padding-right:3rem;text-align: center;">
+        <label class="icon icon-search" for="search"></label>
+        <input type="search" id="search" placeholder='输入搜索ID' />
+      </div>
+      <a class="button button-fill button-primary close-popup" style="position:absolute;right:0.5rem;">取消</a>
+    </header><!-- 标题栏结束 -->
+
+    <div class="content">
+      <div class="content-block-title tips">未检索到相关信息</div>
+      <div class="list-block media-list cont-top">
+        <ul style="border-top:none;">
+          <li>
+            <a href="#" class="item-link item-content">
+              <div class="item-media widimg"><img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg"
+                  style='width: 3rem;'></div>
+              <div class="item-inner" style="background-image:none;">
+                <div class="item-title-row">
+                  <div class="item-title">昵称</div>
+                </div>
+                <div class="item-subtitle" style="margin-top:0.5rem;">ID</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- Search Popup结束 -->
+
+
+  <!-- selease Popup -->
+  <div class="popup popup-release">
+    <header class="bar bar-nav releaseHBG">
+        <a class="button button-link button-nav pull-left back close-popup" style="color:#000;">
+        <span class="icon icon-left"></span>
+        </a>
+        <a type="button" class="button button-nav pull-right button-fill button-danger external">发布</a>
+    </header>
+    <nav class="bar bar-tab releaseBBG">
+        <li class="tab-item BtnIcon">
+          <form id="form-file" action="up.php">
+          <label for="file">
+          <input type="file" name="file" id="file" multiple class="inputfile" />
+          <span class="icon icon-picture"></span>
+          </label>
+          </form>
+        </li> 
+    </nav>
+    
+    <div class="content-padded">
+      <div class="upDataContent">
+          <p style="margin:0px;padding-left: 1rem;">
+            <input type="text" placeholder="在这里写下对那个人想说的吧" class="upInputText" />
+          </p>
+        <ul class="row upulImg">
+          
+         
+        </ul>
+      </div>
+    </div>
+
+
+  </div><!-- selease Popup结束 -->
+
+
+  <!-- Person-details Popup -->
+  <div class="popup popup-person">
+    <header class="bar bar-nav">
+      <a class="button button-link button-nav pull-left close-popup" style="color:#000;">
+      <span class="icon icon-down"></span>
+      关闭
+      </a>
+      <h1 class='title'>个人详情页</h1> 
+    </header>
+    <div class="content" style="top:0rem;">
+      <div class="content-block no-paddings">
+          <div class="card-content personal-bgimg">
+              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="100%">
+          </div>  
+          <div class="card-Headportrait">
+              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="100%">
+          </div> 
+      </div>
+      <div class="content-block autographTxt">
+      <p>个性签名:1111111111</p>
+      <p>
+      <a href="javascript:" class="button button-fill button-success submition" style="line-height:1.7rem;">关注</a>
+      </p>
+      </div>
+      <div class="content-block deta-block">
+          <ul class="row no-gutter data-block-ul">
+              <li class="col-33 row-li">
+                  <span class="introduce">发帖</span><br />
+                  <span class="introduce-content">123456</span>
+              </li>
+              <li class="col-33 row-li">
+                  <span class="introduce">获赞</span><br />
+                  <span class="introduce-content">123456</span>
+              </li>
+              <li class="col-33 row-li">
+                  <span class="introduce">粉丝</span><br />
+                  <span class="introduce-content">123456</span>
+              </li>
+          </ul>
+          <ul class="row no-gutter data-block-ul">
+              <li class="col-33 row-li">
+                  <span class="introduce">性别</span><br />
+                  <span class="introduce-content">男/女</span>
+              </li>
+              <li class="col-33 row-li">
+                  <span class="introduce">年龄</span><br />
+                  <span class="introduce-content">123456</span>
+              </li>
+              <li class="col-33 row-li">
+                  <span class="introduce">星座</span><br />
+                  <span class="introduce-content">处女座</span>
+              </li>
+          </ul>
+      </div>
+    </div>    
+  </div><!-- Person-details Popup结束 -->
+
+
+
+<!-- 这里是ajax 帖子详情页内联页面 -->
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript" src="./js/jquery.min.js" charset='utf-8'></script>
+  <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+  <script type='text/javascript' src="./light7/dist/js/light7.min.js" charset='utf-8'></script>
+  <script type="text/javascript" src="./light7/dist/js/light7-swiper.min.js" charset='utf-8'></script>
+  <script type="text/javascript" src="./js/app2.js"></script>
+  <script type="text/javascript" src="./js/upload2.js"></script>
+
+</body>
+
+</html>

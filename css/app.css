@@ -1,0 +1,357 @@
+ul,li{list-style: none;margin: 0;padding: 0;}
+/*顶部搜索框*/
+
+
+
+/* 主页 */
+.content .content-padded{
+   position: relative;
+    
+    /* 设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。 */
+    
+}
+.content .mag-top{
+    margin-top: 0px;
+}
+.content .content-padded .bt{margin-bottom: 5px;}
+.content .content-padded .cont-bgimg{
+    position: relative;
+    width: 100%;
+}
+.content .content-padded .cont-bgimg img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.content .content-padded .cont-bgimg .cont-bgtxt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    opacity: 0.75;
+    filter: blur(0.4);
+    display: flex;
+}
+.content .content-padded .cont-bgimg .cont-bgtxt .cont-bgtxt-left{
+    flex: 2;
+    font-size: 14px;
+    font-weight: 650;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+.content .content-padded .cont-bgimg .cont-bgtxt .cont-bgtxt-right{
+    flex: 1;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tips{
+    text-align: center;
+    display: block;
+    margin-top: 1.4rem;
+}
+
+
+
+/* 表白墙 */
+.cont-nopadd,.card-nopadd{
+    margin: 0 0 5px 0;
+}
+.card-nopadd{box-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.02)}
+.iwt{
+    margin: 2px 5px 0 0;
+}
+.cont-top{
+    margin: 0.25rem 0;
+}
+.cont-top ul li{
+    border-top: 1px solid #e7e7e7;
+}
+.cont-top ul li:last-child{
+    margin-bottom: 2.5rem;
+    
+}
+/* 表白墙发布图片 */
+.right_nopadding{
+    padding-right: 0.1rem;
+}
+.release_img li:last-child{
+    padding-right: 0;
+}
+
+/* 表白墙发布图片end */
+
+.widimg img{
+    border-radius: 50%;
+}
+
+.libotm{
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.txtconts{
+    color: red;
+   
+}
+.botm{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 1px 7px 6px 9px #d6d1c3;
+    
+}
+.release{
+    color: #fff;
+}
+
+/* 发布按钮ReleaseButton和刷新按钮refresh_btn共同样式 */
+.releaseButton,.refresh_btn{
+    position: fixed;
+   
+    right: 1.74rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: -1px 4px 26px rgba(113, 111, 111, .68);
+}
+
+/* 刷新按钮 */
+.refresh_btn{
+    bottom: 3.5rem;
+}
+
+/* 发布按钮ReleaseButton */
+.releaseButton{
+    bottom: 6rem;
+}
+.releaseButton .releaseTxt{
+    display: block;
+    text-shadow: 4px 3px 23px rgba(12, 12, 12, 0.68),-4px -3px 33px rgba(231, 224, 224, 0.68);
+    
+}
+.releaseHBG,.releaseBBG{
+    background-color: #fff;
+}
+.releaseBBG{
+    border-top: none;
+    box-shadow: 0px 2px 25px rgba(220, 212, 212, 0.68);
+}
+.releaseBBG .BtnIcon{
+    float: left;
+    line-height: 2.5rem;
+    padding-left: 1.2rem;
+}
+.upDataContent{
+    padding-top:2.4rem;
+}
+.upDataContent .upulImg{
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    display: none;
+}
+.upDataContent .upulImg .upli{
+    float: left;
+    position: relative;
+    height: 6rem;
+    border: 1px #d1d1d1 dashed;
+
+}
+.upDataContent .upInputText{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: white;
+    
+}
+
+.upDataContent .upulImg .upli img{
+    display: block;
+    width: 100%;
+    height: 6rem;
+    /* border: 1px #d1d1d1 dashed; */
+}
+
+
+.releaseBBG input{
+    display: none;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: rgb(155, 153, 153);
+    display: inline-block;
+}
+.inputfile:focus + label{
+    background-color: red;
+}
+
+.upDataContent .upulImg .upli .deletImg{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+/* 情书 */
+.cont-nopadd,.card-nopadd{
+    margin: 0 0 5px 0;
+}
+.card-nopadd{box-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.02)}
+.iwt{
+    margin: 2px 5px 0 0;
+}
+
+
+
+/* 我的 */
+.rows{
+    display: flex;
+    align-items: center;
+}
+.nocard{
+    margin: 0;
+    box-shadow: none;
+}
+.rows .cols-left{
+    margin-left: 7%;
+}
+.cols-right{
+    display: flex;
+    flex-direction:column;
+}
+.cols-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.cols-name,.cols-ID,.cols-autograph{
+    flex: 1;
+    margin: 1px 0;
+    text-align: left;
+}
+
+
+.cols-name{
+    font-size: 18px;
+    color: #000;
+    font-weight: 650;
+    display: inline-block;
+}
+.cols-name .icons-name{
+    float: right;
+    padding-right: 20%;
+    font-weight: normal;
+}
+.cols-ID{
+    font-size: 14px;
+    color: #999;
+}
+.cols-autograph{
+    font-size: 14px;
+    color: #333;
+}
+
+.lines-right{
+    border-right: 1px solid #c7c7c7;
+}
+.acolor{
+    color: #000;
+}
+
+.card-bgimg{
+   width: 100%;
+   height: 210px; 
+   
+
+}
+.card-bgimg img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.no-paddings{
+    margin: 0;padding: 0;position: relative;
+}
+.card-Headportrait{
+    width: 90px;
+    height: 90px;
+    display: block;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    margin-left: -48px;
+    z-index: 222;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.card-Headportrait img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.cont-card{
+    margin: 0;
+    box-shadow: none;
+}
+.list-cont{
+    margin-top: 4.75rem;
+}
+.bordertop {
+    border-top:none;
+}
+.widimg img{
+    border-radius: 50%;
+}
+.cont-top{
+    margin: 0.75rem 0;
+}
+.bycolor{
+    background: -wenkit-linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));
+    background: -o-linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));
+    background: -moz-linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));
+    /* background: linear-gradient(to bottom, rgba(236,233,230,1), rgba(255,255,255,1));  */
+    background: linear-gradient(rgba(18,194,233,1), rgba(196,113,237,1), rgba(246,79,89,1));
+}
+.cdtop{
+    margin-top: 5rem;
+    background: linear-gradient(rgba(18,194,233,1), rgba(196,113,237,1), rgba(246,79,89,1)); /* 标准的语法（必须放在最后） */
+}
+.headcolor{
+    border-bottom: none;
+    background: rgba(47, 180, 233,1);
+}
+
+.schtitle-h2,.schtitle-h4{
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+}
+.schtitle-h2{
+    margin-bottom: 13rem;
+}
