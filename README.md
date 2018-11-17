@@ -6,4 +6,5 @@ login界面
 ![image](https://github.com/JK-HU/Campus-confession/blob/master/Image/1.jpg)
 用户详情界面
 ![image](https://github.com/JK-HU/Campus-confession/blob/master/Image/2.1.jpg)
-
+表白墙界面
+![image](https://github.com/JK-HU/Campus-confession/blob/master/Image/3.jpg)
